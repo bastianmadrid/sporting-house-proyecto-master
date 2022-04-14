@@ -3,6 +3,15 @@ body {
     font-family: 'Kanit', 'Roboto Condensed', sans-serif;
 }
 
+#fondo-degradado {
+    background-color: #DAFEB7;
+    background: linear-gradient(to right, #DAFEB7, #387780);
+}
+
+footer {
+    background-color: #0C1B33;
+}
+
 #liston {
     background-color: #F2FBE0;
     background-image: repeating-linear-gradient(30deg, transparent, transparent 25px, #DAFEB7 25px, #DAFEB7 40px);
