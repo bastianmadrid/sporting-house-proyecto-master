@@ -5,7 +5,7 @@ const expresiones = {
 
     nombre: /^[a-zA-ZÀ-ÿ\s]{3,40}$/, // Letras y espacios, pueden llevar acentos.
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-
+    password: /^.{4,12}$/, // 4 a 12 digitos.
 }
 const validarFormulario = (e) => {
     switch (e.target.name) {
