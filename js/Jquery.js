@@ -23,7 +23,7 @@ $(document).ready(function() {
 
         }
     });
-    $('#pass1').keyup(function(e) {
+    $('#pass2').keyup(function(e) {
         var pass1 = $('#pass1').val();
         var pass2 = $('#pass2').val();
         if (pass1 == pass2) {
@@ -37,5 +37,11 @@ $(document).ready(function() {
             $('#error2').text("No se puede dejar en blanco").css("color", "red");
 
         }
+        if (pass1 == "") {
+            $('#error1').text("No se puede dejar en blanco").css("color", "red");
+        } else {
+            $('#error1').text("");
+        }
+
     });
 });
