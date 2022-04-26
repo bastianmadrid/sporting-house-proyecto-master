@@ -26,23 +26,33 @@
 
                 <!---  inicio de sesion-->
 
-                <form action="#">
-                    <div class="md-4">
-                        <label for="email" class="form-label"> Correo electronico</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="md-4"> <label for="password" class="form-label"> Contraseña</label>
-                        <input type="password" class="form-control" name="password">
+                <form action="#" class="inicio" id="inicio">
+
+                    <div class="formulario__inicio" id="inicio_emailini">
+                        <label for="emailini" class="formulario__label__inicio"> Correo electronico</label>
+                        <div class="formulario__inicio__input">
+                            <input type="email" class="form-control" name="emailini" id="emailini" placeholder="nombre@example.com">
+                        </div>
+                        <p class="formulario__input-error-ini">El correo solo puede contener letras, numeros, puntos, guiones, guion bajo y debe especificar un dominio</p>
+
                     </div>
 
+                    <div class="formulario__inicio" id="inicio_password">
+                        <label for="password" class="formulario__label__inicio"> Contraseña</label>
+                        <div class="formulario__inicio__input">
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                        <p class="formulario__input-error-ini">La contraseña tiene que tener de 4 a 16 digitos.</p>
+                    </div>
                     <div class="md-4 form-check">
                         <input type="checkbox" name="conected" class="form-check-input">
                         <label for="conected" class="form-check-label form-check ">Mantenerme conectado</label>
 
                     </div>
                     <br>
-                    <div class="d-grid">
+                    <div class="d-grid d-grid2">
                         <button type="submit" class="btn btn-primary"> iniciar sesion </button>
+                        <p class="formulario_inicio_exito" id="formulario_inicio_exito">Inicio de sesion exitoso</p>
                     </div>
                     <span>No tienes cuenta? <a href="registro.html"> registrate </a> </span>
                     <br>
@@ -81,6 +91,9 @@
                         
                         </button>
                         </div>
+                        <div class="inicio__mensaje" id="inicio__mensaje">
+                            <p><b>Error: porfavor rellena el formulario</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,5 +106,6 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/inicio.js"></script>
 
 </html>

@@ -56,12 +56,10 @@
 
             <form class="formulario" id="formulario">
 
-                <div class="formulario__contacto" id="contacto_nombre">
-                    <label for="Usuario" class="formulario__label">Nombre:</label>
+                <div class="formulario__contacto" id="contacto_nombre" class="form-control">
+                    <label for="username" class="formulario__label">Nombre:</label>
                     <div class="formulario__contacto-input">
-                        <!--<span class="input-group-text">Juan Doe</span>-->
-                        <input type="text" class="formulario__input" placeholder="Nombre de usuario" name="username">
-                        <!--<i class="fa-solid fa-circle-xmark"></i>-->
+                        <input type="text" class="formulario__input" placeholder="Nombre de usuario" name="username" id="username">
                     </div>
                     <p class="formulario__input-error">El nombre de usuario tiene que tener un minimo de 3 digitos!
                     </p>
@@ -70,7 +68,7 @@
                 <div class="formulario__contacto" id="contacto_correo">
                     <label for="Correo" class="formulario_label">Correo:</label>
                     <div class="formulario__contacto-input">
-                        <input type="text" class="formulario__input" placeholder="Email" name="email">
+                        <input type="text" class="formulario__input" placeholder="Email" name="email" id="email">
                         <!--<span class="input-group-text">@example.com</span>-->
                         <!--<i class="fa-solid fa-circle-xmark"></i>-->
                     </div>
@@ -84,7 +82,10 @@
                         <label for="comment">Comentario:</label>
                         <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="formulario__contacto formulario__contacto-btn-enviar">
+                        <button type="submit" name="btn_enviar" class="btn btn-primary">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+                    </div>
                     <!--Terminos y condiciones-->
                     <div class="input-group mb-1" id="input_group,mb-1__terminos">
                         <label class="formulario_label">
