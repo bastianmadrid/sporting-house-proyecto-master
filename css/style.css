@@ -202,33 +202,3 @@ footer {
 .formulario__inicio-correcto .formulario__inicio__input {
     border: 3px solid #008000;
 }
-
-.formulario__mensaje-exito {
-    font-size: 14px;
-    color: #119200;
-    display: none;
-}
-
-.formulario__mensaje-exito-activo {
-    display: block;
-}
-.formulario_inicio_exito{
-    font-size: 14px;
-    color: #119200;
-    display: none;
-}
-.formulario_inicio_exito-activo{
-    display: block;
-}
-.inicio__mensaje {
-    height: 45px;
-    line-height: 45px;
-    background-color: #F66060;
-    padding: 0 15px;
-    border-radius: 3px;
-    width: 100%;
-    display: none;
-}
-.inicio__mensaje-activo {
-    display: block;
-}
