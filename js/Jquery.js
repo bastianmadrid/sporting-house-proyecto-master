@@ -9,6 +9,13 @@ $(document).ready(function() {
                 required: true,
                 email: true
             },
+            pass1: {
+                required: true,
+
+            },
+            pass2: {
+                required: true,
+            }
 
         },
         messages: {
@@ -20,9 +27,16 @@ $(document).ready(function() {
                 required: "Debe ingresar el correo",
                 email: "El correo no es valido"
             },
+            pass1: {
+                required: "ingrese contraseña"
+            },
+            pass2: {
+                required: "repita contraseña"
+            },
 
         }
     });
+
     $('#pass2').keyup(function(e) {
         var pass1 = $('#pass1').val();
         var pass2 = $('#pass2').val();
@@ -38,11 +52,10 @@ $(document).ready(function() {
 
         }
         if (pass1 == "") {
-            $('#error1').text("No se puede dejar en blanco").css("color", "red");
+            $('#error1').text("No se puede dejar en blanco").cssBordercolor("color", "red");
         } else {
             $('#error1').text("");
         }
 
     });
-    $.get("")
 });
