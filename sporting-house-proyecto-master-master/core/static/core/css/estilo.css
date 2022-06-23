@@ -1,0 +1,19 @@
+label.error {
+    margin: 0px;
+    display: block;
+    color: red;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+label.true {
+    margin: 0px;
+    display: block;
+    color: green;
+}
+
+input.true {
+    border: 1px solid green;
+}
