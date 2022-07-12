@@ -78,12 +78,30 @@ WSGI_APPLICATION = 'TestDjango.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'sporting house',
-    }
-}
 
+    'default': {
+
+        'ENGINE': 'django.db.backends.oracle', #Necesito haber instalado el paquete cx_oracle (pip)
+
+        'NAME': '127.0.0.1:1521/xepdb1',
+
+        'USER': 'SPORTING',
+
+        'PASSWORD':'oracle',
+
+        'TEST':{
+
+            'USER':'default_test',
+
+            'TBLSPACE':'default_test_tbls',
+
+            'TBLSPACE_TMP':'default_test_tbls_tmp'
+
+        }
+
+    }
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

@@ -1,0 +1,25 @@
+body{
+    background: url('../img/wallpaperbetter.com_1920x1080.jpg');
+}
+
+.navbar{
+    background-color: #1a2537;
+  }
+
+table thead{
+    background: #1a2537;
+    color: black;
+}
+
+.btn-vaciar {
+    background-color: red;
+    color: #fff !important;
+}
+
+.text-right {
+    color: black;
+}
+
+.text-total {
+    color: black;
+}
